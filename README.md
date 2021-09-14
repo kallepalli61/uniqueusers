@@ -1,5 +1,5 @@
 # uniqueusers
-filter the duplicates from list of two users json arrays
+filter the duplicates from list of two users json array objects
 
 Java Spring boot maven project:
 
