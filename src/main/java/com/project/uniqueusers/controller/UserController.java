@@ -27,7 +27,7 @@ public class UserController {
        List<User> usersList= new ArrayList<>();
         usersList.addAll(userRequest.getUsersList1());
         usersList.addAll(userRequest.getUsersList2());
-        return userService.getAllUsers(usersList);
+        return userService.getAllUniqueUsers(usersList);
 
     }
 

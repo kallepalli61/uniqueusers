@@ -14,8 +14,8 @@ import java.util.stream.Collectors;
 public class UserService {
 
 
-    public List<User> getAllUsers(List<User> users){
-        //key is unique. Here key is name+dept+type.
+    public List<User> getAllUniqueUsers(List<User> users){
+        //key is unique. Here key is name+dept+type to achieve uniqueness.
         return users.stream().filter(distinctByKey(p -> p.getName() + p.getDept() + p.getType())).collect(Collectors.toList());
 
     }
